@@ -1,4 +1,4 @@
-## wheather
+# Wheather
 * Python version: `Python3.9`
 * In order to run the project, firstly create a python `virtual environment`.
 * Secondly, install the requirement.txt, by using `pip install -r requirements.txt`
