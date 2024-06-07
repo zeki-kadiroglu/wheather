@@ -7,7 +7,7 @@
 ## Clarification:
 * `External Service module` retrieves data from remote URL.
 * Whenever starts the app, DataBase is updated thanks to this module.
-* PostgreSQL database has been used in the project.
+* `PostgreSQL` database has been used in the project.
 
 ## Test Endpoints:
 * There are 3 different end points. They can be tested on `Postman`
