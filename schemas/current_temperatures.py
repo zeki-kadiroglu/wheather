@@ -9,8 +9,8 @@ class CurrentTemperatures(BaseModel):
     """Expected parameters that comes from user."""
 
     city: str = Field(
-        None, title="city", description="city name is a necessary input"
+         title="city", description="city name is a necessary input"
     )
     date: Optional[str] = None
     temperature_type: str
-    days: Optional[int] = Field(lt=7)
+    days: Optional[int] = Field(None, lt=7)
