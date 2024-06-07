@@ -1,14 +1,16 @@
 """Pydantic models for the API."""
 from typing import Dict, List, Optional
 
+from fastapi import Query
 from pydantic import BaseModel, Field
 
 
-class QueryParameters(BaseModel):
+class CurrentTemperatures(BaseModel):
     """Expected parameters that comes from user."""
 
     city: str = Field(
         None, title="city", description="city name is a necessary input"
     )
-    filters: Optional[Dict]
-    columns: List
+    date: Optional[str] = None
+    temperature_type: str
+    days: Optional[int] = Field(lt=7)
