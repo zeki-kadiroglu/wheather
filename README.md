@@ -4,6 +4,10 @@
 * Secondly, install the requirement.txt, by using `pip install -r requirements.txt`
 * Then use this command under the wheather directory: `python3 main.py`
 
+## Clarification:
+* `External Service module` retrieves data from remote URL.
+* Whenever starts the app, DataBase is updated thanks to this module. 
+
 ## Test Endpoints:
 * There are 3 different end points. They can be tested on `Postman`
 ### Used body request entities and their definition
@@ -28,5 +32,9 @@
     `GET`: (http://localhost:8000/next_days_temperatures) --> sample body request: {"city":"Paris","temperature_type": "F","days":6}
     Info: This endpoint will return next 3 days, temperatures and date.
     Response: [[15.6,"2024-06-07"],[14.6,"2024-06-06"],[15.6,"2024-06-05"]]
+
+### Unit tests
+* Under the `test` directory, run this command `pytest test_app_api.py`.
+
 
     
