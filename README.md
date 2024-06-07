@@ -16,6 +16,17 @@
 ### End Points
 
 
-    `GET`: `http://localhost:8000/get_current_temperatures --> sample body request: {"city":"Paris", "date": "current","temperature_type":"F"}
+    `GET`: (http://localhost:8000/get_current_temperatures) --> sample body request: {"city":"Paris", "date": "current","temperature_type":"F"}
     Info: This endpoint will return current temperature of the selected city
-    Response: 
+    Response: 57.2
+
+     `GET`: (http://localhost:8000/past_days_temperatures) --> sample body request: {"city":"Paris","temperature_type": "C","days":3}
+    Info: This endpoint will return past 3 days, temperatures and date.
+    Response: [[15.6,"2024-06-07"],[14.6,"2024-06-06"],[15.6,"2024-06-05"]]
+
+
+    `GET`: (http://localhost:8000/next_days_temperatures) --> sample body request: {"city":"Paris","temperature_type": "F","days":6}
+    Info: This endpoint will return next 3 days, temperatures and date.
+    Response: [[15.6,"2024-06-07"],[14.6,"2024-06-06"],[15.6,"2024-06-05"]]
+
+    
